@@ -11,7 +11,6 @@ import javax.persistence.Id;
 @Entity
 public class Customer {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	private UUID id;
 	private String firstName;
 	private String lastName;
@@ -19,7 +18,6 @@ public class Customer {
 	private Date lastUpdated;
 	
 	public Customer () {
-		
 	}
 	
 	public Customer( String firstName, String lastName) {
