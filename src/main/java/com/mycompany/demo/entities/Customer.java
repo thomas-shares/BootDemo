@@ -18,13 +18,18 @@ public class Customer {
 	private Date created;
 	private Date lastUpdated;
 	
+	public Customer () {
+		
+	}
+	
 	public Customer( String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.created = new Date();
 		this.lastUpdated = new Date();
+		this.id = UUID.randomUUID();
 	}
-	
+
 	public UUID getId() {
 		return this.id;
 	}
